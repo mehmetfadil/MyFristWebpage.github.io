@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body{
+    background-color: rgb(30, 29, 29);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.container{
+    margin-top: 15%;
+}
+.text{
+    border: 1px solid rgba(102, 102, 102, 1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+}
+.hobbyElement{
+    display: flex;
+    margin-right: 10px;
+    border: 1px solid rgba(102, 102, 102, 1);
+    border-radius: 4px;
+    width: 19%;
+    height: 90px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.hobbyFirst{
+    background-image: url(/img/friends2.jpg);
+    background-size: contain;
+    background-position: center center;
+}
+.hobbySecond{
+    background-image: url(/img/duman.jpg);
+    background-size: contain;
+    background-position: center center;
+}
+.hobbyThird{
+    background-image: url(/img/valorant2.jpg);
+    background-size: contain;
+    background-position: center;
+}
+a:hover{
+    font-size: 25px;
+    transition: 1s;
+}
+.hobbyElement:hover{
+    opacity: 0.8;
+    transition: 1s;
+    font-size: bold;
+}
+@media only screen and (max-width : 720px) {
+    body{
+        color: black;
+        background-color: white;
+    }
+    .hobbyElement{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
